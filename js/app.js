@@ -1,5 +1,5 @@
 //Creación de validación
-var url = window.location.href;
+/*var url = window.location.href;
 var swLocation = "/twittor/sw.js";
 
 if (navigator.serviceWorker) {
@@ -7,6 +7,25 @@ if (navigator.serviceWorker) {
     swLocation = "/sw.js";
   }
   navigator.serviceWorker.register(swLocation);
+}*/
+
+var swLocation = "/twittor/sw.js";
+
+if ("serviceWorker" in navigator) {
+  // Verifica si la app está en localhost
+  if (window.location.hostname === "localhost") {
+    swLocation = "/sw.js";
+  }
+
+  // Registra el Service Worker
+  navigator.serviceWorker
+    .register(swLocation)
+    .then((registration) => {
+      console.log("Service Worker registrado con éxito:", registration);
+    })
+    .catch((error) => {
+      console.error("Error al registrar el Service Worker:", error);
+    });
 }
 
 // Referencias de jQuery
