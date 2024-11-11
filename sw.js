@@ -9,7 +9,7 @@ const INMUTABLE_CACHE = "imutable-v2";
 
 const APP_SHELL = [
   //"/",
-  "/css/style.css",
+  "css/style.css",
   "img/favicon.ico",
   "img/avatars/hulk.jpg",
   "img/avatars/ironman.jpg",
