@@ -8,7 +8,7 @@ const INMUTABLE_CACHE = "imutable-v2";
 //Static es algo que nosotros hicimos
 
 const APP_SHELL = [
-  "/",
+  //"/",
   "/css/style.css",
   "/img/favicon.ico",
   "/img/avatars/hulk.jpg",
