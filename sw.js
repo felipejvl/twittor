@@ -1,5 +1,5 @@
 //imports
-importScripts("/twittor/js/sw-utils.js");
+importScripts("js/sw-utils.js");
 const STATIC_CACHE = "static-v3";
 const DYNAMIC_CACHE = "dynamic-v2";
 const INMUTABLE_CACHE = "imutable-v2";
@@ -10,14 +10,14 @@ const INMUTABLE_CACHE = "imutable-v2";
 const APP_SHELL = [
   //"/",
   "/css/style.css",
-  "/img/favicon.ico",
-  "/img/avatars/hulk.jpg",
-  "/img/avatars/ironman.jpg",
-  "/img/avatars/spiderman.jpg",
-  "/img/avatars/thor.jpg",
-  "/img/avatars/wolverine.jpg",
-  "/js/app.js",
-  "/js/sw-utils.js",
+  "img/favicon.ico",
+  "img/avatars/hulk.jpg",
+  "img/avatars/ironman.jpg",
+  "img/avatars/spiderman.jpg",
+  "img/avatars/thor.jpg",
+  "img/avatars/wolverine.jpg",
+  "js/app.js",
+  "js/sw-utils.js",
 ];
 
 const APP_SHELL_INMUTABLE = [
